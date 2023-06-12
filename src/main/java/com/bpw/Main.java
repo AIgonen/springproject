@@ -3,13 +3,9 @@ package com.bpw;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
 
 @SpringBootApplication
-//@ComponentScan(basePackages = "com.bpw")
-//@EnableAutoConfiguration
 @RestController
 @RequestMapping("api/v1/customers")
 public class Main {
@@ -54,5 +50,4 @@ public class Main {
 //        customer.setAge(request.age());
 //        customerRepository.save(customer);
 //    }
-
 }
