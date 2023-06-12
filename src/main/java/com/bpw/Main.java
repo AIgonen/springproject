@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = "com.bpw")
@@ -42,18 +43,16 @@ public class Main {
     public void deleteCustomer(@PathVariable("customerId") Integer id) {
         customerRepository.deleteById(id);
     }
-    // @GetMapping("/greet")
-    // public GreetResponse greet() {
-    //     return new GreetResponse(
-    //             "Hello",
-    //             List.of("Java", "Golang", "C#"),
-    //             new Person("Alex", 30, 50000)
-    //     );
-    // }
-    // record Person(String name, int age, double savings) {
-    //
-    // }
-    // record GreetResponse (String greet, List<String> languages, Person person) {
-    //
-    // }
+
+//    @PutMapping("{customerId}")
+//    public void updateCustomer(@PathVariable("customerId") Integer id, @RequestBody NewCustomerRequest request) {
+//         customerRepository.findById(id);
+//
+//        Customer customer = new Customer();
+//        customer.setName(request.name());
+//        customer.setEmail(request.email());
+//        customer.setAge(request.age());
+//        customerRepository.save(customer);
+//    }
+
 }
